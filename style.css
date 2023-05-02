@@ -5,3 +5,19 @@ html {
 *:before,
 *:after {
   box-sizing: inherit; }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0;
+  width: fit-content; }
+
+.cell {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px; }
+
+.ship {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px; }
