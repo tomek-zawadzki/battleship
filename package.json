@@ -1,0 +1,13 @@
+{
+  "name": "battleship",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "sass": "npx node-sass -w src/sass/style.scss style.css"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "sass": "^1.62.1"
+  }
+}
