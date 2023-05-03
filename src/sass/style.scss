@@ -1,10 +1,51 @@
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.title {
+  font-size: 10rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  &__start {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    background-color: rgb(0, 0, 128);
+    color: white;
+    border: none;
+    transition: backgroundColor, 0.3s;
+  }
+  &__start:hover {
+    background-color: rgb(16, 16, 165);
+  }
+  &__start:active {
+    background-color: rgb(67, 67, 228);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 10rem;
+  &__player {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
 
 .board {
@@ -16,12 +57,27 @@ html {
 
 .cell {
   border: 1px solid black;
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.ships {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 4rem;
+  gap: 1rem;
+  &__shape {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .ship {
   border: 1px solid black;
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
 }
