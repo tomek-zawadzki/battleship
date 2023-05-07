@@ -55,7 +55,7 @@ html {
   width: fit-content;
 }
 
-.cell {
+.square {
   border: 1px solid black;
   width: 3rem;
   height: 3rem;
@@ -73,6 +73,7 @@ html {
   &__shape {
     display: flex;
     flex-direction: row;
+    background-color: blueviolet;
   }
 }
 
